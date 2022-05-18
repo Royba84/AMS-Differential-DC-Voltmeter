@@ -112,7 +112,7 @@ Block number 4: Differential voltage rectifiers
 
 Block number 4: Differential voltage rectifiers
                
-               ![image](https://user-images.githubusercontent.com/105777016/169133092-ab7a4211-c6be-448b-ba6b-bb68f581f326.png)
+![image](https://user-images.githubusercontent.com/105777016/169135807-c763a090-d194-478e-bc33-cf1a00e6f1dd.png)
 
 
 Why we are using rectifiers anyway?:
@@ -135,8 +135,10 @@ All the resistors that were used in this block are equal to R=500[kΩ].
 
 Block number 5: Comperator OA with a relay
 
-               ![image](https://user-images.githubusercontent.com/105777016/169133782-b358bb42-ebf1-4b81-9491-05117e45fce4.png)
-              
+
+![image](https://user-images.githubusercontent.com/105777016/169135762-a73966c1-0121-4eaa-a538-9584530fb103.png)
+
+               
 The comparators input in V+ is the rectified differential output voltage from the previous block number 4.
 
 And on V- we have 500[mV] from the buffer amplifier mention on block 3.
@@ -149,7 +151,8 @@ And if the absolute value of the differential voltage is less than 500[mV] the r
 
 The relays output (green wire) goes to A0 and the orange wire goes to pin 2.
 
-System's flowchart:
+Systems flowchart:
+  
 ![image](https://user-images.githubusercontent.com/105777016/169134176-be50a36b-d817-4031-96cc-3ce52328a25f.png)
   
   ![image](https://user-images.githubusercontent.com/105777016/169134324-64964ee1-7149-42e8-8b8b-f14c5b00364c.png)
@@ -165,10 +168,12 @@ In order to achieve that result we used Buffer operational amplifier (for both i
 Note: even if the voltage==0[v] we get 0/0 = ‘not defined’, but it doesn’t matter since anyway there is no connection (voltage nor current) in this case.
 
 Electrical circuit:
+  
   ![image](https://user-images.githubusercontent.com/105777016/169134628-06383edd-d69f-4218-a46a-667505347302.png)
 
 
 System Layout:
+  
   ![image](https://user-images.githubusercontent.com/105777016/169134960-bde73ab4-6421-4cbb-b838-450ad47c389a.png)
 
 
